@@ -1,0 +1,7 @@
+# バックエンドURL
+NEXT_PUBLIC_API_URL="https://ga-t.yamata-youchien.com"
+# 以下は開発時は固定
+NEXT_PUBLIC_ACTIVE_ENV=local
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_51L3aVrKpdXoeribFLA0g65Q3vUPIUm7gLHRqcAW9d5cCXZWYwrwd8jVb9iDWnRTNSwkGmcXUNUES3fbwFNXsPaOz00fGAcFpxR
+NEXT_PUBLIC_GTM_ID=GTM-NBS4NJSG
+NEXT_PUBLIC_HOME_URL="https://www.appsheet.com/start/8563a99f-2027-4065-af19-f3c9fca1a2dc"

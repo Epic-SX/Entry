@@ -1,0 +1,137 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-gardenentry-dev-75455-authRole",
+      "UnauthRoleArn": "arn:aws:iam::141222591869:role/amplify-gardenentry-dev-75455-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::141222591869:role/amplify-gardenentry-dev-75455-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-gardenentry-dev-75455-deployment",
+      "UnauthRoleName": "amplify-gardenentry-dev-75455-unauthRole",
+      "StackName": "amplify-gardenentry-dev-75455",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:141222591869:stack/amplify-gardenentry-dev-75455/fd33fc50-578a-11ee-8951-0e4a824f3027",
+      "AmplifyAppId": "d1cykra97twi1q"
+    },
+    "categories": {
+      "function": {
+        "gardenEntryPrisma": {
+          "databaseUrl": "manual set this parameter",
+          "dbUser": "procareer",
+          "dbPassword": "mocp-1laF",
+          "dbHost": "ls-bf15afce80379e47381861067ef5adaabb589eca.c8zrdtfrihk1.ap-northeast-1.rds.amazonaws.com",
+          "dbPort": "3306",
+          "dbSchema": "garden_entry_d",
+          "deploymentBucketName": "amplify-gardenentry-dev-75455-deployment",
+          "s3Key": "amplify-builds/gardenEntryPrisma-7575306d48336d365766-build.zip"
+        },
+        "updateToursGuardiansStatus": {
+          "dbHost": "ls-bf15afce80379e47381861067ef5adaabb589eca.c8zrdtfrihk1.ap-northeast-1.rds.amazonaws.com",
+          "dbPort": "3306",
+          "dbUser": "procareer",
+          "dbPassword": "mocp-1laF",
+          "dbName": "garden_entry_d",
+          "deploymentBucketName": "amplify-gardenentry-dev-75455-deployment",
+          "s3Key": "amplify-builds/updateToursGuardiansStatus-6b4839664c397072654f-build.zip"
+        }
+      },
+      "api": {
+        "gardenEntry": {}
+      },
+      "auth": {
+        "gardenentryb74d8c35": {}
+      },
+      "storage": {
+        "hestiaPhotoStorage": {}
+      }
+    }
+  },
+  "test": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-gardenentry-test-55405-authRole",
+      "UnauthRoleArn": "arn:aws:iam::679716007728:role/amplify-gardenentry-test-55405-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::679716007728:role/amplify-gardenentry-test-55405-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-gardenentry-test-55405-deployment",
+      "UnauthRoleName": "amplify-gardenentry-test-55405-unauthRole",
+      "StackName": "amplify-gardenentry-test-55405",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:679716007728:stack/amplify-gardenentry-test-55405/bdc7ad50-f6fe-11ee-b3b5-0a1524dd6fbb",
+      "AmplifyAppId": "dqxkgklcjkkqd"
+    },
+    "categories": {
+      "function": {
+        "gardenEntryPrisma": {
+          "databaseUrl": "manual set this parameter",
+          "dbUser": "procareer",
+          "dbPassword": "mocp-1laF",
+          "dbHost": "ls-bf15afce80379e47381861067ef5adaabb589eca.c8zrdtfrihk1.ap-northeast-1.rds.amazonaws.com",
+          "dbPort": "3306",
+          "dbSchema": "garden_entry_t",
+          "deploymentBucketName": "amplify-gardenentry-test-55405-deployment",
+          "s3Key": "amplify-builds/gardenEntryPrisma-7575306d48336d365766-build.zip"
+        },
+        "updateToursGuardiansStatus": {
+          "dbHost": "ls-bf15afce80379e47381861067ef5adaabb589eca.c8zrdtfrihk1.ap-northeast-1.rds.amazonaws.com",
+          "dbPort": "3306",
+          "dbUser": "procareer",
+          "dbPassword": "mocp-1laF",
+          "dbName": "garden_entry_t",
+          "deploymentBucketName": "amplify-gardenentry-test-55405-deployment",
+          "s3Key": "amplify-builds/updateToursGuardiansStatus-6b4839664c397072654f-build.zip"
+        }
+      },
+      "auth": {
+        "gardenentryb74d8c35": {}
+      },
+      "api": {
+        "gardenEntry": {}
+      },
+      "storage": {
+        "hestiaPhotoStorage": {}
+      }
+    }
+  },
+  "prod": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-gardenentry-prod-63720-authRole",
+      "UnauthRoleArn": "arn:aws:iam::679716007728:role/amplify-gardenentry-prod-63720-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::679716007728:role/amplify-gardenentry-prod-63720-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-gardenentry-prod-63720-deployment",
+      "UnauthRoleName": "amplify-gardenentry-prod-63720-unauthRole",
+      "StackName": "amplify-gardenentry-prod-63720",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:679716007728:stack/amplify-gardenentry-prod-63720/c8baa8b0-f704-11ee-9064-0a9575a71df7",
+      "AmplifyAppId": "dqxkgklcjkkqd"
+    },
+    "categories": {
+      "auth": {
+        "gardenentryb74d8c35": {}
+      },
+      "function": {
+        "gardenEntryPrisma": {
+          "databaseUrl": "manual set this parameter",
+          "dbUser": "procareer",
+          "dbPassword": "mocp-1laF",
+          "dbHost": "7uzk5e99.procareer.co.jp",
+          "dbPort": "3306",
+          "dbSchema": "garden_entry_t",
+          "deploymentBucketName": "amplify-gardenentry-prod-63720-deployment",
+          "s3Key": "amplify-builds/gardenEntryPrisma-7575306d48336d365766-build.zip"
+        },
+        "updateToursGuardiansStatus": {
+          "dbHost": "7uzk5e99.procareer.co.jp",
+          "dbUser": "procareer",
+          "dbPassword": "mocp-1laF",
+          "dbPort": "3306",
+          "dbName": "garden_entry",
+          "deploymentBucketName": "amplify-gardenentry-prod-63720-deployment",
+          "s3Key": "amplify-builds/updateToursGuardiansStatus-6b4839664c397072654f-build.zip"
+        }
+      },
+      "api": {
+        "gardenEntry": {}
+      },
+      "storage": {
+        "hestiaPhotoStorage": {}
+      }
+    }
+  }
+}

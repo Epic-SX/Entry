@@ -1,0 +1,347 @@
+{
+    "Index": {
+        "title": "こんにちは"
+    },
+    "LocaleSwitcher": {
+        "locale": "{locale, select, jp {🇯🇵日本} en {🇺🇸Eng} other {🌐}}"
+    },
+    "Login": {
+        "title": "ログイン",
+        "pendingTitle": "ログイン中"
+    },
+    "Logout": {
+        "title": "ログアウト",
+        "pendingTitle": "ログアウト中"
+    },
+    "ForgotPassword": {
+        "title": " パスワードを忘れた方はこちら"
+    },
+    "LoginForm": {
+        "email": "メールアドレス",
+        "password": "パスワード"
+    },
+    "HeaderTitle": {
+        "title": "Beyondia International School やまた幼稚園"
+    },
+    "FormValidation": {
+        "required_title": "必須",
+        "required": " {field} は必須です",
+        "required_general": "この項目は必須入力です",
+        "required_select": "この項目は選んでください",
+        "email_invalid": "メールアドレスが正しくありません",
+        "email_confirm": "メールアドレスが一致しません",
+        "zenkaku_kana": "全角カナを入力してください",
+        "name_alpha": "アルファベットを入力してください",
+        "zipcode_regex": "正しい郵便番号を入力してください(例:123-4567)",
+        "address_regex": "正しい住所を入力してください(例:東京都千代田区1-2-3)",
+        "phone_regex": "正しい電話番号を入力してください(例:080-4567-909)",
+        "year_regex": "正しい西暦を入力してください(例:1990)",
+        "pledge": "全ての誓約事項に同意してください",
+        "file_required": "ファイルを選択してください",
+        "file_over_size": "ファイルサイズは最大4MBです",
+        "file_invalid": "ファイルの形式が正しくありません",
+        "photo_required": "写真をアップロードしてください。",
+        "answer_required": "回答を入力してください。",
+        "answer_max": "回答は1000文字以内で入力してください。",
+        "form_invalid": "フォームの入力内容に誤りや不足がある場合は、もう一度ご確認ください",
+        "entry_class_invalid":"入園希望月時点で1歳6ヶ月を超えている必要があります",
+        "entry_date_invalid":"申し訳ありませんが当月での入園は受け付けておりません。次月以降を選択してください。"
+    },
+    "FormTitle": {
+        "guardian_id": "",
+        "child_id": "",
+        "last_name": "姓",
+        "first_name": "名",
+        "tour_id": "参加希望見学会日程",
+        "tour_id_note": "満席の場合、キャンセル待ち受付になります。",
+        "tour_full": "(満席)",
+        "guardian_name": "保護者氏名",
+        "guardian_name_kana": "保護者氏名(フリガナ)",
+        "child_name": "お子さんの氏名",
+        "child_name_kana": "お子さんの氏名(フリガナ)",
+        "child_name_alp": "お子さんの氏名(ローマ字)",
+        "child_sex": "お子さんの性別",
+        "child_birthday": "お子さんの生年月日",
+        "zipcode": "郵便番号",
+        "prefecture": "都道府県",
+        "address": "市区町村以下の住所",
+        "building": "建物名",
+        "tel": "電話番号",
+        "email": "メールアドレス",
+        "email_check": "メールアドレス(確認)",
+        "password": "パスワード",
+        "password_note": "次回以降の参加申込み時に利用します",
+        "being_in": "在園・卒園状況",
+        "being_in_note": "ご家族に在園卒園のご兄姉はいらっしゃいますか。ご不在の場合は「初めての入園」をお選びください。",
+        "trigger": "当園を知ったきっかけ",
+        "trigger_other": "",
+        "trigger_other_before_text": "その他詳細",
+        "entry_will": "入園希望",
+        "entry_class": "ご入園を希望される学年",
+        "entry_year": "入園希望年度(西暦)",
+        "entry_year_before_text": "(西暦で)",
+        "entry_year_after_text": "年度",
+        "entry_year_note": "入園希望の年ではなく年度をご入力ください",
+        "entry_month": "入園希望月",
+        "other_kindy": "他に検討中の幼稚園",
+        "other_kindy_note": "他に見学予定または見学済みの園があれば教えてください。",
+        "choice_reason": "園選択の理由",
+        "choice_reason_text": "",
+        "choice_reason_text_note": "Beyondia International School やまた幼稚園を希望する動機、園探しの上で大切にしているポイントなどがあればお聞かせください。",
+        "tour_note": "見学会に向けた伝達事項",
+        "pledge": "Pledges for submitting the admissions application",
+        "url": "URL",
+        "task_1": "Question1",
+        "task_2": "Question2",
+        "task_3": "Question3",
+        "task_4": "Question4",
+        "exam_date": "Date of examination",
+        "exam_time": "Time of examination",
+        "result_division": "examination results",
+        "upload_file": "submitted photos"
+    },
+    "ApiMessage": {
+        "error_500": "エラーが発生しました。もう一度やり直してください",
+        "error_403": "権限がないか、このページにアクセスできません",
+        "error_405": "許可されていないメソッド",
+        "error_404": "データなし",
+        "error_400": "無効なリクエスト",
+        "error_401": "メールアドレスまたはパスワードに誤りがあります",
+        "error_429": "エラーがリクエスト制限を超えました",
+        "error_422": "入力されたフォームが正確でないか、必須項目が入力されていません",
+        "error_network": "エラーネットワーク",
+        "error_unknown": "不明なエラーが発生しました、もう一度お試しください",
+        "error_session_expires": "セッションの有効期限が切れました。再度ログインしてください"
+    },
+    "ErrorMessage": {
+        "not_found": "ページが見つかりません!",
+        "any_error": "何か問題が発生しました!",
+        "invalid_page": "アクセスしているページは無効です"
+    },
+    "ApiStatus": {
+        "processing": "処理中",
+        "save_success": "保存しました",
+        "save_error": "保存に失敗しました",
+        "update_success": "更新しました",
+        "update_error": "更新に失敗しました",
+        "delete_success": "削除しました",
+        "delete_error": "削除に失敗しました",
+        "fetch_error": "データの取得に失敗しました",
+        "fetch_success": "データを取得しました",
+        "upload_image_success": "写真のアップロードが完了しました。",
+        "upload_image_error": "写真のアップロードに失敗しました。",
+        "save_tmp_success": "一時保存が完了しました。",
+        "save_tmp_error": "一時保存に失敗しました。",
+        "tour_regist_duplicate_error": "すでにお申込済みまたはキャンセル待ちの見学会予定があります",
+        "tour_auth_error": "認証できません"
+    },
+    "FooterDescription": {
+        "commerce_low": " 特定商取引法に基づく表記",
+        "procari_co_ltd": "開発元 : 株式会社プロキャリ",
+        "privacy_policy": "プライバシーポリシー"
+    },
+    "Navigation": {
+        "tours_schedule_list": "見学会一覧",
+        "tours_entries": "見学会参加者一覧",
+        "entry_list": "考査情報管理",
+        "coordination_to_pastel": "パステル連携",
+        "bi_report": "入園者分析"
+    },
+    "PageTitle": {
+        "schedules": "見学会スケジュール管理",
+        "exam_manages": "考査情報管理",
+        "exam_manages_pastel": "パステル連携",
+        "tours_regist": "見学会お申込み"
+    },
+    "Pages": {
+        "tours": {
+            "tour_description": "必要事項をご記入の上、お申込みをお願いします。\n見学会は原則お一人様1回のみお申込み・参加が可能です。",
+            "regist_modal_title": "認証情報入力",
+            "regist_modal_description": " 前回入力したメールアドレスとパスワードを入力してください\n パスワードご不明の方は「初めて申し込みの方」から再度全ての情報をご入力ください",
+            "steps": {
+                "input": "情報入力",
+                "confirm": "入力情報確認",
+                "complete": "完了"
+            },
+            "regist_completed_message": "受付が完了しました。お申込みありがとうございました。",
+            "reentry": {
+                "note": "以下の見学会へのお申込みを承ります。よろしいですか？",
+                "note_warning":"※すでに他の見学会に申込みをされている場合は、そちらはキャンセルされますのでご注意ください。",
+                "tours_reentry_success":"受付が完了しました。お申込みありがとうございました。",
+                "tours_reentry_full": "申し訳ありませんが満席となったため、キャンセル待ちで受け付けました。"
+            }
+        },
+        "entries": {
+            "title": "考査お申込み",
+            "description": "必要事項をご記入の上、お申込みをお願いします。",
+            "steps": {
+                "input": "情報入力",
+                "payment": "決済",
+                "submission": "課題提出",
+                "completed": "完了"
+            },
+            "regist_completed_message": "考査のお申込みが完了しました。引き続き、課題の提出をお願いします。"
+        },
+        "tasks": {
+            "title": "課題提出",
+            "input_confirm_title": "入力内容をご確認ください",
+            "upload_image_note": "写真のアップロードと共に以下の設問にご回答ください。(目安時間60分)",
+            "submitted_photos_title": "提出写真",
+            "upload_image_section": {
+                "upload_image_section_note": "以下2つの写真をアップロードしてください。",
+                "upload_image_title1": "お子さん単独の顔写真",
+                "upload_image_title2": "お子さんと保護者ご本人が一緒に写った写真"
+            },
+            "regist_completed_message": "課題提出が完了しました。\n考査日は未定です。追って連絡させていただきます。\nお会いできるのを楽しみにしております。"
+        },
+        "common": {
+            "examination_fee": "願書＋考査料",
+            "tax_included": "税込",
+            "examination_fee_note": "この後の画面でカード決済させていただきます",
+            "the_payment_amount_is": "決済金額は ¥{amount} です",
+            "credit_card_on_the_next_screen": "次画面にてクレジットカード決済をお願いします。",
+            "pledge_with_examination_entry_title": "考査お申込みの提出にあたっての誓約事項",
+            "pledge_with_examination_entry_note": "考査お申込みにあたっては重要事項説明書をお読みいただき、誓約事項に同意いただく必要があります。",
+            "pledge_with_examination_entry_link": "『重要事項説明書』および『入園願書の提出にあたっての誓約事項』をダウンロードする",
+            "pledge_with_examination_entry_list": {
+                "1": "貴園に入園を志望いたします。「重要事項説明書」及び「入園願書の提出にあたっての誓約事項」を受領し、その内容を理解してこれを誓約するとともに、本人に関する一切の責任を負うことを約束します。",
+                "2": "園児及び保護者について、貴園に在籍中に貴園が撮影した写真及び映像等の個人肖像及び園児が制作した物について、貴園が、貴園の教育目的、広報目的に利用すること(Websiteや横浜市営地下鉄グリーンビジョンその他の対外的な掲示に限りません。)を理解し、個人肖像や制作物について、当該本人が識別される場合には保護者の求めに応じて速やかに利用又は掲載を停止できることを条件として、かかる利用について同意します。",
+                "3": "貴園から、関係諸機関(地域療育センターを含みますが、これに限りません。)に対して相談をするよう推奨されたときは、次に掲げる事項を誓約します。\n速やかに推奨された当該機関へ相談をし、指定された期間までに結果について報告すること\n診断書の提出を求められた場合は、速やかに自費負担にて貴園に提出すること\n貴園の指示に従って、関係諸機関における保育を受けること",
+                "4": "貴園の職員から園児の引渡を受けた後、園児が引き続き貴園の施設内で遊ぶときは、保護者の監督及び責任の下にあることを理解しており、次に掲げる事項を誓約します。\n引渡し前の園児の保育に支障がないようにすること\n立入り禁止地域へ入り込むことがないよう、目を離さずに監督すること\n指定された最終降園時刻までに降園すること",
+                "5": "バスを利用する際には、Beyondia International School やまた幼稚園に園児を通わせている保護者として、停留所において近隣の迷惑にならないように配慮し、乗降車後は速やかに帰宅することを誓約します。"
+            },
+            "question": "設問",
+            "photo_upload_modal_title": "写真のアップロード",
+            "photo_upload_modal_content_title": "アップロードしたい画像を選択してください"
+        }
+    },
+    "ButtonTitle": {
+        "for_first_time_applicants_btn": "初めてお申込みの方",
+        "those_who_have_already_applied_btn": "すでにお申込みをしたことがある方",
+        "cancel_btn": "キャンセル",
+        "send_mail_btn": "送信",
+        "reset_form_btn": "入力情報をリセット",
+        "go_to_confirmation_screen_btn": "確認画面へ",
+        "returns_to_the_input_screen_btn": "入力画面に戻る",
+        "go_to_credit_card_payment_screen_btn": "クレジットカード決済画面へ",
+        "change_photo_btn": "画像を変更",
+        "save_temporarily_btn": "一時保存する",
+        "upload_btn": "アップロード",
+        "assignment_submission_completed_btn": "課題提出完了",
+        "home_return_btn": " ホームに戻る",
+        "please_try_again_btn": "もう一度お試しください",
+        "return_to_site_btn": "サイトに戻る",
+        "regist_completed_btn": " お申込み完了",
+        "processing_upload_btn": "アップロード中"
+    },
+    "MonthOptions": {
+        "1": "1月",
+        "2": "2月",
+        "3": "3月",
+        "4": "4月",
+        "5": "5月",
+        "6": "6月",
+        "7": "7月",
+        "8": "8月",
+        "9": "9月",
+        "10": "10月",
+        "11": "11月",
+        "12": "12月"
+    },
+    "TriggerOptions": {
+        "1": "検索サイトGoogle",
+        "2": "検索サイトYahoo",
+        "3": "ビタミンママ",
+        "4": "びーのびーの",
+        "6": "区役所の案内",
+        "7": "幼稚園バスを見て",
+        "8": "友人／知人",
+        "9": "卒園児／在園児",
+        "10": "車内ビジョン（東横線／市営地下鉄）",
+        "11": "車内アナウンス",
+        "12": "駅看板",
+        "14": "デジタルサイネージ",
+        "13": "その他（SNS／他ブログ等）"
+    },
+    "PrefectureOptions": {
+        "1": "北海道",
+        "2": "青森県",
+        "3": "岩手県",
+        "4": "宮城県",
+        "5": "秋田県",
+        "6": "山形県",
+        "7": "福島県",
+        "8": "茨城県",
+        "9": "栃木県",
+        "10": "群馬県",
+        "11": "埼玉県",
+        "12": "千葉県",
+        "13": "東京都",
+        "14": "神奈川県",
+        "15": "新潟県",
+        "16": "富山県",
+        "17": "石川県",
+        "18": "福井県",
+        "19": "山梨県",
+        "20": "長野県",
+        "21": "岐阜県",
+        "22": "静岡県",
+        "23": "愛知県",
+        "24": "三重県",
+        "25": "滋賀県",
+        "26": "京都府",
+        "27": "大阪府",
+        "28": "兵庫県",
+        "29": "奈良県",
+        "30": "和歌山県",
+        "31": "鳥取県",
+        "32": "島根県",
+        "33": "岡山県",
+        "34": "広島県",
+        "35": "山口県",
+        "36": "徳島県",
+        "37": "香川県",
+        "38": "愛媛県",
+        "39": "高知県",
+        "40": "福岡県",
+        "41": "佐賀県",
+        "42": "長崎県",
+        "43": "熊本県",
+        "44": "大分県",
+        "45": "宮崎県",
+        "46": "鹿児島県",
+        "47": "沖縄県"
+    },
+    "GenderOptions": {
+        "1": "男性",
+        "2": "女性"
+    },
+    "BeingInOptinons": {
+        "0": "初めての入園",
+        "2": "在園児あり",
+        "3": "卒園児あり"
+    },
+    "EntryWillOptions": {
+        "1": "入園を希望している ",
+        "2": "他園と比較した上で検討する  "
+    },
+    "EntryClassOptions": {
+        "1": "年少",
+        "2": "めばえ",
+        "3": "ふたば",
+        "5": "ふたば(Aクラス)",
+        "6": "ふたば(Bクラス)",
+        "7": "ふたば(Cクラス)",
+        "4": "プレふたば",
+        "99": "その他(途中入園等)"
+    },
+    "EntryClassOptionsMap": {
+        "4": "プレ",
+        "5": "Aクラス",
+        "6": "Bクラス",
+        "7": "Cクラス"
+    },
+    "Currentcy": {
+        "jp": "¥"
+    }
+}

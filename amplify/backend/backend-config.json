@@ -1,0 +1,188 @@
+{
+  "api": {
+    "gardenEntry": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "gardenEntryPrisma"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "auth": {
+    "gardenentryb74d8c35": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
+    }
+  },
+  "function": {
+    "gardenEntryPrisma": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "updateToursGuardiansStatus": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "hosting": {},
+  "parameters": {
+    "AMPLIFY_function_gardenEntryPrisma_databaseUrl": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "gardenEntryPrisma"
+        }
+      ]
+    },
+    "AMPLIFY_function_gardenEntryPrisma_dbHost": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "gardenEntryPrisma"
+        }
+      ]
+    },
+    "AMPLIFY_function_gardenEntryPrisma_dbPassword": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "gardenEntryPrisma"
+        }
+      ]
+    },
+    "AMPLIFY_function_gardenEntryPrisma_dbPort": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "gardenEntryPrisma"
+        }
+      ]
+    },
+    "AMPLIFY_function_gardenEntryPrisma_dbSchema": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "gardenEntryPrisma"
+        }
+      ]
+    },
+    "AMPLIFY_function_gardenEntryPrisma_dbUser": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "gardenEntryPrisma"
+        }
+      ]
+    },
+    "AMPLIFY_function_gardenEntryPrisma_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "gardenEntryPrisma"
+        }
+      ]
+    },
+    "AMPLIFY_function_gardenEntryPrisma_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "gardenEntryPrisma"
+        }
+      ]
+    },
+    "AMPLIFY_function_updateToursGuardiansStatus_dbHost": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "updateToursGuardiansStatus"
+        }
+      ]
+    },
+    "AMPLIFY_function_updateToursGuardiansStatus_dbName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "updateToursGuardiansStatus"
+        }
+      ]
+    },
+    "AMPLIFY_function_updateToursGuardiansStatus_dbPassword": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "updateToursGuardiansStatus"
+        }
+      ]
+    },
+    "AMPLIFY_function_updateToursGuardiansStatus_dbPort": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "updateToursGuardiansStatus"
+        }
+      ]
+    },
+    "AMPLIFY_function_updateToursGuardiansStatus_dbUser": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "updateToursGuardiansStatus"
+        }
+      ]
+    },
+    "AMPLIFY_function_updateToursGuardiansStatus_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "updateToursGuardiansStatus"
+        }
+      ]
+    },
+    "AMPLIFY_function_updateToursGuardiansStatus_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "updateToursGuardiansStatus"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "hestiaPhotoStorage": {
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "S3"
+    }
+  }
+}

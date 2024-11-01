@@ -1,0 +1,72 @@
+name: E2E Testing
+on:
+  push:
+    branches:
+      - RIKKEI-275
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+    branches:
+      - master
+      - test
+      - dev
+jobs:
+  detect-env:
+    runs-on: ubuntu-latest
+    outputs:
+      environment: ${{ steps.set-env.outputs.ENVIRONMENT }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up environment
+        id: set-env
+        run: |
+          if [[ "${{ github.head_ref }}" == "master" || "${{ github.ref }}" == "refs/heads/master"  ]]; then
+            echo "ENVIRONMENT=prod" >> $GITHUB_OUTPUT
+          elif [[ "${{ github.head_ref }}" == "test" || "${{ github.ref }}" == "refs/heads/test" ]]; then
+            echo "ENVIRONMENT=test" >> $GITHUB_OUTPUT
+          elif [[ "${{ github.head_ref }}" == "dev" || "${{ github.ref }}" == "refs/heads/dev" ]]; then
+             echo "ENVIRONMENT=dev" >> $GITHUB_OUTPUT
+          else
+             echo "ENVIRONMENT=dev" >> $GITHUB_OUTPUT
+          fi
+  sendmail-test:
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    needs: [ detect-env ]
+    environment: ${{ needs.detect-env.outputs.environment }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install dependencies
+        run: npm install
+      - name: Setting env
+        run: |
+          if [[ "${{ needs.detect-env.outputs.environment }}" == "prod" ]]; then
+            echo "Copy environment of Prod"
+            cp .envProd .env
+          elif [[ "${{ needs.detect-env.outputs.environment }}" == "test" ]]; then
+            echo "Copy environment of test"
+            cp .envTest .env
+          elif [[ "${{ needs.detect-env.outputs.environment }}" == "dev" ]]; then
+            echo "Copy environment of dev"
+            cp .envDev .env
+          else
+            echo "Copy environment of other (dev)"
+            cp .envDev .env
+          fi
+      - name: Install Playwright dependencies
+        run: npx playwright install-deps
+      - name: Install browser
+        run: npx playwright install chromium
+      - name: Run Playwright tests
+        run: npx playwright test --reporter=github
+        env:
+          NEXT_PUBLIC_MAIL_TEST: ${{ vars.MAIL_TEST || 'infosys@kuriharagakuen.ac.jp' }}
+          NEXT_PUBLIC_MAIL_TEST_SUBJECT: ${{ vars.MAIL_TEST_SUBJECT }}
+          NEXT_PUBLIC_MAIL_TEST_BODY: ${{ vars.MAIL_TEST_BODY }}

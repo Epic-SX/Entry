@@ -1,0 +1,16 @@
+version: "2"
+services:
+    www:
+        build: ./docker/www
+        ports: 
+            - "8081:8001"
+            - "8082:8002"
+            - "8083:80"
+        volumes:
+            - ./web:/var/www/
+            - ./root:/root
+            - ./apache2:/etc/apache2
+        networks:
+            - default
+volumes:
+    persistent:

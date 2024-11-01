@@ -1,0 +1,348 @@
+@charset "UTF-8";
+
+.header {
+    background-color: #1a49ad !important;
+}
+
+.nav-item.active {
+    background-color: #a1a8d4 !important;
+    border-radius: 2px;
+}
+
+.nav-item:hover {
+    background-color: #a1a8d4 !important;
+    border-radius: 2px;
+}
+
+.main {
+    padding-top: 4rem;
+    padding-bottom: 10rem;
+}
+
+.footer {
+    background-color: #1a49ad !important;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.modal-custom {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.alert-custom {
+    position: fixed;
+    z-index: 3;
+    top: 6%;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+/* Laravel共通部分 */
+.datepicker {
+    width: 70%;
+    display: inline-block;
+}
+
+.ui-datepicker-trigger {
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+    padding: .375rem .75rem;
+    color: #495057;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-left: none;
+}
+
+.input-group-text,
+.ui-datepicker-trigger {
+    height: calc(1.6em + 0.75rem + 2px);
+}
+
+/* 共通部分終わり */
+
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.py-4 {
+    background-color: white;
+}
+
+.navbar-collapse:not(.show) {
+    display: contents;
+}
+
+.navbar-nav {
+    text-align: right;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: #1a49ad;
+}
+
+.footer a {
+    color: aliceblue;
+    text-decoration: underline;
+}
+
+.footer .container {
+    color: aliceblue;
+}
+
+body>.container {
+    padding: 60px 15px 0;
+}
+
+/* .container .text-muted {
+    margin: 20px 0;
+} */
+
+.footer .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.form-group .row {
+    margin-bottom: 10px;
+}
+
+.form-group .raw_text {
+    font-size: 16px;
+    margin-top: 7px;
+}
+
+.form-group .label {
+    font-size: 16px;
+    margin-top: 7px;
+    font-weight: 600;
+}
+
+.card {
+    margin-bottom: 10px;
+}
+
+.form-table {
+    width: 100%;
+    display: table;
+}
+
+.form-table td,
+.form-table th {
+    border: 1px solid #dde2e6;
+}
+
+.form-group .icon {
+    padding-left: 0px;
+    padding-top: 10px;
+}
+
+.navbar {
+    background-color: #1a49ad;
+}
+
+#app {
+    background-color: floralwhite;
+}
+
+.card-body .header-img {
+    max-width: 100%;
+}
+
+.point div {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card img {
+    max-width: 100%;
+}
+
+.btn {
+    margin-bottom: 3px;
+}
+
+input.form-check-input {
+    margin-bottom: 10px;
+}
+
+.modal-body .icon {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-bottom: 5px;
+}
+
+.pass-header {
+    width: 100%;
+    height: 200px;
+    /* background-image:url(/garden_entry/img/pass_header.jpg); */
+    background-size: cover;
+}
+
+.pass-content {
+    padding: 30px 100px;
+    background-color: white;
+}
+
+@media(max-width:768px) {
+    .pass-content {
+        padding: 20px;
+    }
+}
+
+.pass-footer {
+    width: 100%;
+    height: 200px;
+    /* background-image:url(/garden_entry/img/pass_footer.jpg); */
+    background-size: cover;
+}
+
+.pass-text {
+    font-size: 1.5em;
+}
+
+.pass-word {
+    color: green;
+    font-weight: 700;
+    font-size: 2.0em;
+}
+
+.manage-group {
+    max-width: none;
+}
+
+.manage-group .table {
+    font-size: 14px;
+}
+
+.mincho {
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    transform: rotate(.03deg);
+}
+
+.double-border {
+    border: solid 2px gray;
+    height: 26px;
+}
+
+.single-border {
+    border: solid 1px gray;
+    height: 26px;
+}
+
+.bs-wizard {
+    margin-top: 40px;
+}
+
+/*Form Wizard*/
+.bs-wizard {
+    border-bottom: solid 1px #e0e0e0;
+    padding: 0 0 10px 0;
+}
+
+.bs-wizard>.bs-wizard-step {
+    padding: 0;
+    position: relative;
+}
+
+.bs-wizard>.bs-wizard-step+.bs-wizard-step {}
+
+.bs-wizard>.bs-wizard-step .bs-wizard-stepnum {
+    color: #595959;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.bs-wizard>.bs-wizard-step .bs-wizard-info {
+    color: #999;
+    font-size: 14px;
+}
+
+.bs-wizard>.bs-wizard-step>.bs-wizard-dot {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    display: block;
+    background: #fbe8aa;
+    top: 45px;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -15px;
+    border-radius: 50%;
+}
+
+.bs-wizard>.bs-wizard-step>.bs-wizard-dot:after {
+    content: ' ';
+    width: 14px;
+    height: 14px;
+    background: #fbbd19;
+    border-radius: 50px;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.bs-wizard>.bs-wizard-step>.progress {
+    position: relative;
+    border-radius: 0px;
+    height: 8px;
+    box-shadow: none;
+    margin: 20px 0;
+}
+
+.bs-wizard>.bs-wizard-step>.progress>.progress-bar {
+    width: 0px;
+    box-shadow: none;
+    background: #fbe8aa;
+}
+
+.bs-wizard>.bs-wizard-step.complete>.progress>.progress-bar {
+    width: 100%;
+}
+
+.bs-wizard>.bs-wizard-step.active>.progress>.progress-bar {
+    width: 50%;
+}
+
+.bs-wizard>.bs-wizard-step:first-child.active>.progress>.progress-bar {
+    width: 0%;
+}
+
+.bs-wizard>.bs-wizard-step:last-child.active>.progress>.progress-bar {
+    width: 100%;
+}
+
+.bs-wizard>.bs-wizard-step.disabled>.bs-wizard-dot {
+    background-color: #f5f5f5;
+}
+
+.bs-wizard>.bs-wizard-step.disabled>.bs-wizard-dot:after {
+    opacity: 0;
+}
+
+.bs-wizard>.bs-wizard-step:first-child>.progress {
+    left: 50%;
+    width: 50%;
+}
+
+.bs-wizard>.bs-wizard-step:last-child>.progress {
+    width: 50%;
+}
+
+.bs-wizard>.bs-wizard-step.disabled a.bs-wizard-dot {
+    pointer-events: none;
+}
+
+/*END Form Wizard*/

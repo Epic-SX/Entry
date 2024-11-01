@@ -1,0 +1,171 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model childs {
+  id              BigInt    @id @default(autoincrement()) @db.UnsignedBigInt
+  guardian_id     Int
+  last_name       String    @db.VarChar(255)
+  first_name      String    @db.VarChar(255)
+  last_name_kana  String    @db.VarChar(255)
+  first_name_kana String    @db.VarChar(255)
+  birthday        DateTime  @db.Date
+  sex             Int?
+  deleted_at      DateTime? @db.Timestamp(0)
+  created_at      DateTime? @db.Timestamp(0)
+  updated_at      DateTime? @db.Timestamp(0)
+  last_name_alp   String?   @db.VarChar(255)
+  first_name_alp  String?   @db.VarChar(255)
+}
+
+model exam_entries {
+  id               BigInt    @id @default(autoincrement()) @db.UnsignedBigInt
+  guardian_id      Int
+  child_id         Int
+  entry_class      Int
+  entry_year       Int
+  entry_month      Int
+  entry_date       DateTime? @db.Date
+  send_task_date   DateTime? @db.Date
+  exam_date        DateTime? @db.Timestamp(0)
+  send_result_date DateTime? @db.Date
+  cancel_date      DateTime? @db.Date
+  status           Int       @default(5)
+  deleted_at       DateTime? @db.Timestamp(0)
+  created_at       DateTime? @db.Timestamp(0)
+  updated_at       DateTime? @db.Timestamp(0)
+  token            String?   @db.VarChar(255)
+  photo1           String?   @db.VarChar(50)
+  photo2           String?   @db.VarChar(50)
+  result_division  Int       @default(99)
+  locale           String    @default("jp") @db.VarChar(255)
+}
+
+model guardians {
+  id              BigInt    @id @default(autoincrement()) @db.UnsignedBigInt
+  last_name       String    @db.VarChar(255)
+  first_name      String    @db.VarChar(255)
+  last_name_kana  String    @db.VarChar(255)
+  first_name_kana String    @db.VarChar(255)
+  zipcode         String    @db.VarChar(255)
+  address         String    @db.VarChar(255)
+  tel             String    @db.VarChar(255)
+  email           String    @db.VarChar(255)
+  deleted_at      DateTime? @db.Timestamp(0)
+  created_at      DateTime? @db.Timestamp(0)
+  updated_at      DateTime? @db.Timestamp(0)
+  prefecture      String    @db.VarChar(255)
+  building        String?   @db.VarChar(255)
+}
+
+model jobs {
+  id           BigInt @id @default(autoincrement()) @db.UnsignedBigInt
+  queue        String @db.VarChar(255)
+  payload      String @db.LongText
+  attempts     Int    @db.UnsignedTinyInt
+  reserved_at  Int?   @db.UnsignedInt
+  available_at Int    @db.UnsignedInt
+  created_at   Int    @db.UnsignedInt
+
+  @@index([queue(length: 191)], map: "jobs_queue_index")
+}
+
+model migrations {
+  id        Int    @id @default(autoincrement()) @db.UnsignedInt
+  migration String
+  batch     Int
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
+model password_resets {
+  email      String    @db.VarChar(255)
+  token      String    @db.VarChar(255)
+  created_at DateTime? @db.Timestamp(0)
+
+  @@index([email(length: 191)], map: "password_resets_email_index")
+  @@ignore
+}
+
+model personal_access_tokens {
+  id             BigInt    @id @default(autoincrement()) @db.UnsignedBigInt
+  tokenable_type String    @db.VarChar(255)
+  tokenable_id   BigInt    @db.UnsignedBigInt
+  name           String    @db.VarChar(255)
+  token          String    @unique(map: "personal_access_tokens_token_unique") @db.VarChar(64)
+  abilities      String?   @db.Text
+  last_used_at   DateTime? @db.Timestamp(0)
+  created_at     DateTime? @db.Timestamp(0)
+  updated_at     DateTime? @db.Timestamp(0)
+
+  @@index([tokenable_type, tokenable_id], map: "personal_access_tokens_tokenable_type_tokenable_id_index")
+}
+
+model task_answers {
+  id            BigInt    @id @default(autoincrement()) @db.UnsignedBigInt
+  task_id       Int
+  exam_entry_id Int
+  answer        String?   @default("") @db.VarChar(1000)
+  deleted_at    DateTime? @db.Timestamp(0)
+  created_at    DateTime? @db.Timestamp(0)
+  updated_at    DateTime? @db.Timestamp(0)
+}
+
+model tasks {
+  id          BigInt    @id @default(autoincrement()) @db.UnsignedBigInt
+  question    String    @default("") @db.VarChar(1000)
+  answer_flg  Boolean   @default(true)
+  deleted_at  DateTime? @db.Timestamp(0)
+  created_at  DateTime? @db.Timestamp(0)
+  updated_at  DateTime? @db.Timestamp(0)
+  question_jp String?   @db.Text
+  question_zh String?   @db.Text
+}
+
+model tours {
+  id          BigInt    @id @default(autoincrement()) @db.UnsignedBigInt
+  event_date  DateTime  @db.Date
+  event_time  String    @db.VarChar(255)
+  description String?   @db.Text
+  capacity    Int       @default(0)
+  deleted_at  DateTime? @db.Timestamp(0)
+  created_at  DateTime? @db.Timestamp(0)
+  updated_at  DateTime? @db.Timestamp(0)
+}
+
+model tours_guardians {
+  id              BigInt    @id @default(autoincrement()) @db.UnsignedBigInt
+  tour_id         Int
+  guardian_id     Int
+  child_id        Int
+  note            String    @db.Text
+  status_division Int
+  locale          String    @default("jp") @db.VarChar(255)
+  deleted_at      DateTime? @db.Timestamp(0)
+  created_at      DateTime? @db.Timestamp(0)
+  updated_at      DateTime? @db.Timestamp(0)
+  being_in        Int
+  trigger         Int
+  trigger_other   String?   @db.VarChar(255)
+  entry_will      Int
+  other_kindy     String?   @db.VarChar(255)
+  choice_reason   String?   @db.Text
+  tour_note       String?   @db.Text
+}
+
+model users {
+  id                BigInt    @id @default(autoincrement()) @db.UnsignedBigInt
+  name              String    @db.VarChar(255)
+  email             String    @unique(map: "users_email_unique")
+  email_verified_at DateTime? @db.Timestamp(0)
+  password          String    @db.VarChar(255)
+  role_id           Int
+  remember_token    String?   @db.VarChar(100)
+  deleted_at        DateTime? @db.Timestamp(0)
+  created_at        DateTime? @db.Timestamp(0)
+  updated_at        DateTime? @db.Timestamp(0)
+}

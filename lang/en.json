@@ -1,0 +1,349 @@
+{
+    "Index": {
+        "title": "Hello"
+    },
+    "LocaleSwitcher": {
+        "locale": "{locale, select, jp {🇯🇵日本} en {🇺🇸Eng} other {🌐}}"
+    },
+    "Login": {
+        "title": "Login",
+        "pendingTitle": "Logging In"
+    },
+    "Logout": {
+        "title": "Logout",
+        "pendingTitle": "Logging Out"
+    },
+    "ForgotPassword": {
+        "title": "Forgot Your Password?"
+    },
+    "LoginForm": {
+        "email": "E-Mail Address",
+        "password": "Password"
+    },
+    "HeaderTitle": {
+        "title": "Beyondia International School Yamata Kindergarten"
+    },
+    "FormValidation": {
+        "required_title": "required",
+        "required": " {field} is required",
+        "required_general": "This field is required",
+        "required_select": "Please select this item",
+        "email_invalid": "Invalid email address",
+        "email_confirm": "Email addresses do not match",
+        "zenkaku_kana": "Please enter full width katakana",
+        "name_alpha": "Please enter only alphabet",
+        "zipcode_regex": "Please enter a valid postal code (ex:123-4567)",
+        "address_regex": "Please enter a valid address(ex:Tokyo Chiyoda-ku 1-2-3)",
+        "phone_regex": "Please enter a valid phone number (ex:080-4567-909)",
+        "year_regex": "Please enter a valid year (ex:1990)",
+        "pledge": "Please agree to the pledge",
+        "file_required": "Please select a file",
+        "file_over_size": "The file size is over 4MB",
+        "file_invalid": "The file format is invalid",
+        "photo_required":"Please upload photos.",
+        "answer_required": "Please enter an answer.",
+        "answer_max":"Answer must be less than 1000 characters.",
+        "form_invalid": "Incorrect or missing form entries please check again",
+        "entry_class_invalid":"Children must be over 1 year and 6 months old by the time they wish to enroll.",
+        "entry_date_invalid":"The date you wish to enroll matches the current date. Please select a different date."
+    },
+    "FormTitle": {
+        "guardian_id": "",
+        "child_id": "",
+        "last_name": "Surname",
+        "first_name": "Name",
+        "tour_id": "Desired date for participation",
+        "tour_id_note": "If the class is full, you will be placed on a waiting list.",
+        "tour_full": "(Full)",
+        "guardian_name": "Guardian Name",
+        "guardian_name_kana": "Guardian Name(Katakana)",
+        "child_name": "Child Name",
+        "child_name_kana": "Child Name(Katakana)",
+        "child_name_alp": "Child Name(Alphabet)",
+        "child_sex": "Gender of your child",
+        "child_birthday": "Your child's date of birth",
+        "zipcode": "Post code",
+        "prefecture": "Prefecture",
+        "address": "Address",
+        "building": "Building",
+        "tel": "Telephone number",
+        "email": "Email address",
+        "email_check": "Email address(Confirmation)",
+        "password": "Password",
+        "password_note": "This will be used when applying for participation from next time onwards.",
+        "being_in": "Status of enrollment and graduation",
+        "being_in_note": "Please indicate if you have a brother or sister in your family who is currently enrolled in the school or graduated from the school.",
+        "trigger": "How did you learn about our Kindergarten?",
+        "trigger_other": "",
+        "trigger_other_before_text": "Other details",
+        "entry_will": "Willingness to enrollment",
+        "entry_class": "The grade you wish to enter",
+        "english_exam":"Examination Language",
+        "exam_checkbox":"Request for the examination in English",
+        "entry_year": "Desired year of admission (AD)",
+        "entry_year_before_text": "(the year)",
+        "entry_year_after_text": "AD",
+        "entry_year_note": "Please enter the desired academic year instead of the calendar year",
+        "entry_month": "Desired month of admission",
+        "other_kindy": "Other Kindergartens under consideration",
+        "other_kindy_note": "Which other Kindergartens are you planning to visit or have visited?",
+        "choice_reason": "Reasons for choosing the Kindergarten",
+        "choice_reason_text": "",
+        "choice_reason_text_note": "Please let us know your motivation for wanting to go to Beyondia International School Yamata Kindergarten, what you look for in a kindergarten, and why you do not want to go there.",
+        "tour_note": "Items to be communicated to the Kindergarten before the school tour",
+        "pledge": "Pledges for submitting the admissions application",
+        "url": "URL",
+        "task_1": "Question1",
+        "task_2": "Question2",
+        "task_3": "Question3",
+        "task_4": "Question4",
+        "exam_date": "Date of examination",
+        "exam_time": "Time of examination",
+        "result_division": "examination results",
+        "upload_file": "submitted photos"
+    },
+    "ApiMessage": {
+        "error_500": "An error has occurred. Please try again later.",
+        "error_403": "You don't have permission or can't access this page",
+        "error_405": "Method not allowed",
+        "error_404": "No data found",
+        "error_400": "invalid request",
+        "error_401": "Incorrect email address or password",
+        "error_429": "Error exceeded request limit. Please try again later.",
+        "error_422": "The form is not entered correctly or required fields are not entered.",
+        "error_network": "Error network",
+        "error_unknown": "An unknown error has occurred, please try again later.",
+        "error_session_expires": "Session has expired. Please log in again"
+    },
+    "ErrorMessage": {
+        "not_found": "Page not found",
+        "any_error": "An error has occurred. Please try again later.",
+        "invalid_page": "The page you are looking for does not exist."
+    },
+    "ApiStatus": {
+        "processing": "Processing",
+        "save_success": "Saved successfully",
+        "save_error": "Failed to save",
+        "update_success": "Updated successfully",
+        "update_error": "Failed to update",
+        "delete_success": "Deleted successfully",
+        "delete_error": "Failed to delete",
+        "fetch_error": "Failed to get data",
+        "fetch_success": "Get data successfully",
+        "upload_image_success": "Upload image successfully",
+        "upload_image_error": "Failed to upload image",
+        "save_tmp_success": "Temporary saving is complete.",
+        "save_tmp_error": "Temporary saving is failed.",
+        "tour_regist_duplicate_error":"There are tours for which you have already applied or are on the waiting list.",
+        "tour_auth_error":"Authentication failed."
+    },
+    "FooterDescription": {
+        "commerce_low": "Notation based on the Act on Specified Commercial Transactions(Japanese)",
+        "procari_co_ltd": "Procari Co., Ltd.",
+        "privacy_policy": "Privacy Policy"
+    },
+    "Navigation": {
+        "tours_schedule_list": "List of tours",
+        "tours_entries": "List of participants",
+        "entry_list": "Admissions information",
+        "coordination_to_pastel": "Coordination to Pastel",
+        "bi_report":"Visitor analysis"
+    },
+    "PageTitle": {
+        "schedules": "Tour schedule management",
+        "exam_manages": "Examination information management",
+        "exam_manages_pastel": "Pastel collaboration",
+        "tours_regist": "Application for school tour"
+    },
+    "Pages": {
+        "tours": {
+            "tour_description": "Please fill in the required information and submit your application.",
+            "regist_modal_title": "Enter authentication information",
+            "regist_modal_description": "Please enter the email address and password you entered last time.\nIf you do not know your password, please enter all the information again from \"For first-time applicants\"",
+            "steps": {
+                "input": "Input",
+                "confirm": "Confirmation",
+                "complete": "Completed"
+            },
+            "regist_completed_message": "Reception has been completed. Thank you for your application.",
+            "reentry":{
+                "note":"We are accepting applications for the following tours. Is it OK?",
+                "note_warning":"Please note that if you have already applied for another tour, that application will be canceled.",
+                "tours_reentry_success":"Registration has been completed. Thank you for your application.",
+                "tours_reentry_full": "We apologize for the inconvenience, but we are now fully booked and have a waiting list."
+            }
+        },
+        "entries": {
+            "title": "Apply for admission exam",
+            "description": "Please fill in the required items and apply.",
+            "steps": {
+                "input": "Input",
+                "payment": "Payment",
+                "submission": "Submission",
+                "completed": "Completed"
+            },
+            "regist_completed_message": "Your application for the examination has been completed. Please continue to submit your assignments."
+        },
+        "tasks": {
+            "title": "Submission of assignments",
+            "input_confirm_title": "Please check your input.",
+            "submitted_photos_title": "Submitted photos",
+            "upload_image_note": "Please answer the following questions along with uploading the photo. (Approximate time 60 minutes)",
+            "upload_image_section": {
+                "upload_image_section_note": "Please upload the following two pictures",
+                "upload_image_title1": "Face photo of the child alone",
+                "upload_image_title2": "A picture of the child and the parent/guardian together"
+            },
+            "regist_completed_message": "Assignment submission has been completed.\nThe examination date has not been determined. I will contact you later.\nWe look forward to meeting you."
+        },
+        "common": {
+            "examination_fee": "Exam fee",
+            "tax_included": "Tax included",
+            "the_payment_amount_is": "The payment amount is {amount} yen.",
+            "credit_card_on_the_next_screen": "Please pay by credit card on the next screen.",
+            "examination_fee_note": "Card payment will be made on the screen after this.",
+            "pledge_with_examination_entry_title": "Pledges for submitting an examination application",
+            "pledge_with_examination_entry_note": "Before applying for the admissions exam, you need to read the Important information and agree to the pledge.",
+            "pledge_with_examination_entry_link": "Download \"Important information\" and \"Pledges for submitting the admissions application\".",
+            "pledge_with_examination_entry_list": {
+                "1": "I would like to apply for admission to Beyondia International School Yamata Kindergarten. I have read and understand the \"Important Information\" and \"Admissions application\". I have read and understand the \"Important Information\" and \"agree to the pledge upon submission of the Application Form\". I pledge to understand the contents thereof and to take full responsibility for my child",
+                "2": "Regarding children and their guardians, personal portraits such as photographs and videos taken by you during their enrollment at your nursery school, as well as items created by your children, may be used by your nursery school for educational and public relations purposes (Website (not limited to Yokohama Municipal Subway Green Vision and other external notices), and if the person in question can be identified, we will promptly use or post them at the request of the guardian. You agree to such use, provided that you may opt out of such use.",
+                "3": "When your nursery school recommends that you consult with related organizations (including, but not limited to, community rehabilitation centers), you will pledge the following:\nPromptly consult the recommended institution and report the results by the specified period.\nIf you are asked to submit a medical certificate, please promptly submit it to your nursery school at your own expense.\nReceive childcare at related institutions according to your nursery school's instructions.",
+                "4": "I understand that after the child has been handed over by the staff of your nursery school, if the child continues to play in the facilities of your nursery school, it will be under the supervision and responsibility of the guardian, and I have pledged the following: Masu.\nEnsure that there are no hindrances to childcare for children before handover.\nKeep an eye on people to ensure they do not enter restricted areas.\nBe sure to leave the park by the designated final drop-off time.",
+                "5": "When using the bus, as a parent whose child attends Beyondia International School or kindergarten, I pledge to be careful not to disturb the neighborhood at the bus stop, and to return home promptly after getting on and off the bus."
+            },
+            "question": "Question",
+            "photo_upload_modal_title": "Photo upload",
+            "photo_upload_modal_content_title": "Select the image you want to upload"
+        }
+    },
+    "ButtonTitle": {
+        "for_first_time_applicants_btn": "For first time applicants",
+        "those_who_have_already_applied_btn": "Those who have already applied",
+        "cancel_btn": "Cancel",
+        "send_mail_btn": "Send",
+        "reset_form_btn": "Reset",
+        "go_to_confirmation_screen_btn": "Go to confirmation screen",
+        "returns_to_the_input_screen_btn": "Returns to the input screen",
+        "go_to_credit_card_payment_screen_btn": "Go to credit card payment screen",
+        "change_photo_btn": "Change photo",
+        "save_temporarily_btn": "Save temporarily",
+        "upload_btn": "Upload",
+        "assignment_submission_completed_btn": "Assignment submission completed",
+        "home_return_btn": "Go back to the home page",
+        "please_try_again_btn": "Please try again",
+        "return_to_site_btn": "Return to site",
+        "regist_completed_btn": "Registration completed",
+        "processing_upload_btn": "Processing upload"
+    },
+    "MonthOptions": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+    },
+    "TriggerOptions": {
+        "1": "Search site: Google",
+        "2": "Search site: Yahoo!",
+        "3": "Vitamin Mama",
+        "4": "Bi-no-bi-no",
+        "6": "Ward Office Information",
+        "7": "Saw the kindergarten bus",
+        "8": "From a friend / From someone you know",
+        "9": "children who graduated or enrolled",
+        "10": "In-train advertisement(Toyoko Line/City Subway)",
+        "11": "Announcement on the train",
+        "12": "Station sign",
+        "14": "Digital signage",
+        "13": "Other (SNS/other blogs, etc.)"
+    },
+    "PrefectureOptions": {
+        "1": "Hokkaido",
+        "2": "Aomori",
+        "3": "Iwate",
+        "4": "Miyagi",
+        "5": "Akita",
+        "6": "Yamagata",
+        "7": "Fukushima",
+        "8": "Ibaraki",
+        "9": "Tochigi",
+        "10": "Gunma",
+        "11": "Saitama",
+        "12": "Chiba",
+        "13": "Tokyo",
+        "14": "Kanagawa",
+        "15": "Niigata",
+        "16": "Toyama",
+        "17": "Ishikawa",
+        "18": "Fukui",
+        "19": "Yamanashi",
+        "20": "Nagano",
+        "21": "Gifu",
+        "22": "Shizuoka",
+        "23": "Aichi",
+        "24": "Mie",
+        "25": "Shiga",
+        "26": "Kyoto",
+        "27": "Osaka",
+        "28": "Hyogo",
+        "29": "Nara",
+        "30": "Wakayama",
+        "31": "Tottori",
+        "32": "Shimane",
+        "33": "Okayama",
+        "34": "Hiroshima",
+        "35": "Yamaguchi",
+        "36": "Tokushima",
+        "37": "Kagawa",
+        "38": "Ehime",
+        "39": "Kochi",
+        "40": "Fukuoka",
+        "41": "Saga",
+        "42": "Nagasaki",
+        "43": "Kumamoto",
+        "44": "Oita",
+        "45": "Miyazaki",
+        "46": "Kagoshima",
+        "47": "Okinawa"
+    },
+    "GenderOptions": {
+        "1": "Male",
+        "2": "Female"
+    },
+    "BeingInOptinons": {
+        "0": "First time admission",
+        "2": "Has had previously enrolled children ",
+        "3": "Has had graduating children"
+    },
+    "EntryWillOptions": {
+        "1": "Hope to enroll",
+        "2": "Consideration after comparing with other schools"
+    },
+    "EntryClassOptions": {
+        "1": "Younger",
+        "2": "Mebae",
+        "3": "Futaba",
+        "5": "Futaba(A class)",
+        "6": "Futaba(B class)",
+        "7": "Futaba(C class)",
+        "4": "Pre-Futaba",
+        "99": "other"
+    },
+    "EntryClassOptionsMap": {
+        "4": "Pre",
+        "5": "A class",
+        "6": "B class",
+        "7": "C class"
+    },
+    "Currentcy": {
+        "jp": "yen"
+    }
+}

@@ -1,0 +1,85 @@
+name: Continuous integration workflow (check lint and build)
+
+# Trigger events for the workflow
+on:
+  pull_request:
+    types:
+      - opened         # Trigger when the pull request is opened
+      - reopened       # Trigger when the pull request is reopened
+      - synchronize    # Trigger when the pull request is updated
+    branches:
+      - master
+      - dev            # Run the workflow on the dev branch
+      - test
+      - RIKKEI-422-add-pre-check-lint-build-before-create-mergerq  # Run the workflow on a specific feature branch
+jobs:
+  detect-env:
+    # Set up an Ubuntu environment to run the job
+    runs-on: ubuntu-latest
+    outputs:
+      environment: ${{ steps.set-env.outputs.ENVIRONMENT }}  # Export the ENVIRONMENT variable from the 'set-env' step
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2  # This step checks out the repository code
+
+      - name: Set up environment
+        id: set-env
+        run: |
+          # Determine the environment based on the base branch of the pull request
+          if [[ "${{ github.event.pull_request.base.ref }}" == "master" ]]; then
+            echo "ENVIRONMENT=prod" >> $GITHUB_OUTPUT  # If the base branch is master, set ENVIRONMENT to prod
+          elif [[ "${{ github.event.pull_request.base.ref }}" == "test" ]]; then
+            echo "ENVIRONMENT=test" >> $GITHUB_OUTPUT  # If the base branch is test, set ENVIRONMENT to test
+          else
+            echo "ENVIRONMENT=dev" >> $GITHUB_OUTPUT   # Otherwise, set ENVIRONMENT to dev
+          fi
+  lint-build:
+    # Job to run lint checks
+    runs-on: ubuntu-latest
+    needs: [ detect-env ]
+    environment: ${{ needs.detect-env.outputs.environment }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2  # Check out the repository code
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18.x 
+
+      # Copy environment variables into .env file
+      - name: Setting env
+        run: |
+          if [[ "${{ needs.detect-env.outputs.environment }}" == "prod" ]]; then
+            echo "Copy environment of Prod"
+            cp .envProd .env
+          elif [[ "${{ needs.detect-env.outputs.environment }}" == "test" ]]; then
+            echo "Copy environment of test"
+            cp .envTest .env
+          elif [[ "${{ needs.detect-env.outputs.environment }}" == "dev" ]]; then
+            echo "Copy environment of dev"
+            cp .envDev .env
+          else
+            echo "Copy environment of other (dev)"
+            cp .envDev .env
+          fi
+
+      # Update npm to the latest version
+      - name: Update npm
+        run: npm update
+
+      # Install dependencies for lint check
+      - name: Install dependencies for lint/build check
+        run: npm install
+
+      # Run lint check to ensure code follows standards
+      - name: Run lint check
+        run: npm run lint
+      
+      # Run lint check to ensure code follows standards
+      - name: Run build check
+        run: npm run build
+      
+      - name: Verify build
+        run: |
+          echo "Build verification completed"  # Display message when the build completes
